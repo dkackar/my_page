@@ -1,0 +1,138 @@
+// Bootstrap Colors
+$brand-primary:#336699;
+$border-color: #bfbfbf;
+$nav-font-color:white;
+$lime-green:#C1D4B6;
+$green-blue:#61AFC9;
+$blue:#4BB4DE;
+$dark-gray:#404040;
+
+body { 
+  padding-top: 70px; 
+}
+.container-fluid {
+  background-color:$green-blue;
+  height:450px;
+}
+
+.about_container {
+    height:450px;
+    max-height:450px;
+}
+
+.portfolio_container {
+    height:450px;
+    max-height:450px;
+}
+
+.about_me {
+  color:white;
+  font-family:"Papyrus","Script","Arial";
+  position: absolute;
+  font-size:25px;
+  color:white;
+  top:50%;
+  width:100%;
+}
+
+#myNavbar a {
+  color:white;
+  font-family:"Papyrus","Script","Arial";
+  font-size:20px;
+}
+
+#profile_links_list a {
+  color:white;
+  font-family:"Papyrus","Script","Arial";
+  font-size:25px;
+}
+
+#web_links {
+  height:70px;
+}
+
+#home_display_page {   
+    height:450px;
+    max-height:450px;
+
+    display:block;;
+}
+
+#other_display_page {   
+    height:450px;
+    max-height:450px;
+    min-height:450px;
+    display:block;
+}
+
+.font_style {
+  font-family: "Papyrus","Script","Arial";
+}
+
+.font_size {
+  font-size:22px;
+}
+
+.font_color_profiles {
+  color:white;
+}
+
+.main_profile_links {
+  position: absolute;
+  font-size:35px;
+  font-family:"Papyrus","Script","Arial";
+  color:white;
+  top:40%; 
+  width:100%}
+
+#profile {
+  position:absolute;
+  top:-20px;
+  left:80px;
+}
+
+#content_links {
+}
+
+.nav-personal-link:link {
+  text-decoration: underline;
+}
+
+[class*='photo-caption']{ 
+   display:none;
+   position:absolute; 
+   top:80%;
+   left:20%;
+   background-color:gray;
+}
+
+.photo-ref:hover > [class*='photo-caption']{
+ display:block;
+ }
+  
+.container-border {
+  border:1px solid $border-color;
+}
+
+.row.no-pad {
+  margin-right:0;
+  margin-left:0;
+}
+.row.no-pad > [class*='col-'] {
+  padding-right:0;
+  padding-left:0;
+}
+.empty_para {
+  height:70px;
+}
+
+.cover-image{
+    width:100%;
+    height:500px;
+}    
+
+// See http://stackoverflow.com/questions/18153234/center-a-div-using-bootstrap-3-markup-or-css
+.col-centered{
+  float: none;
+  margin: 0 auto;
+}

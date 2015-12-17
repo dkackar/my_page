@@ -122,6 +122,7 @@ body {
   padding-right:0;
   padding-left:0;
 }
+
 .empty_para {
   height:70px;
 }
@@ -131,6 +132,30 @@ body {
     height:500px;
 }    
 
+.info_display {
+   min-height:420px;
+}
+
+.img_profile_picture{
+   height:200px;
+   width:175px;
+}
+
+.about_display_background {
+  background:url(/assets/vector-1064993_640.jpg) no-repeat;
+  background-size:100%;
+}
+
+.experience_display_background {
+  background:url(/assets/black-1072366_640.jpg) no-repeat;
+  background-size:100%;
+}
+ 
+.coming_soon_background {
+  background:url(/assets/coffee-839233_640.jpg) no-repeat;
+  background-size:100%;
+}
+ 
 // See http://stackoverflow.com/questions/18153234/center-a-div-using-bootstrap-3-markup-or-css
 .col-centered{
   float: none;

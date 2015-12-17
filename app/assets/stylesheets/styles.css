@@ -99,6 +99,25 @@ body {
   width: 100%;
   height: 500px; }
 
+.info_display {
+  min-height: 420px; }
+
+.img_profile_picture {
+  height: 200px;
+  width: 175px; }
+
+.about_display_background {
+  background: url(/assets/vector-1064993_640.jpg) no-repeat;
+  background-size: 100%; }
+
+.experience_display_background {
+  background: url(/assets/black-1072366_640.jpg) no-repeat;
+  background-size: 100%; }
+
+.coming_soon_background {
+  background: url(/assets/coffee-839233_640.jpg) no-repeat;
+  background-size: 100%; }
+
 .col-centered {
   float: none;
   margin: 0 auto; }

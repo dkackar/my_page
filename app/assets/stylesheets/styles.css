@@ -3,6 +3,8 @@ body {
 
 .container-fluid {
   background-color: #61AFC9;
+  background-color: #66a3ff;
+  background-color: #3377ff;
   height: 450px; }
 
 .about_container {
@@ -108,6 +110,7 @@ body {
 
 .about_display_background {
   background: url(/assets/vector-1064993_640.jpg) no-repeat;
+  background: url(/assets/sky-1232794_1280.png) no-repeat;
   background-size: 100%; }
 
 .experience_display_background {

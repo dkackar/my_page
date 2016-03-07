@@ -39,9 +39,6 @@ body {
   display: block; }
 
 #other_display_page {
-  height: 550px;
-  max-height: 550px;
-  min-height: 450px;
   display: block; }
 
 .font_style {

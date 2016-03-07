@@ -47,7 +47,7 @@ body {
   font-family: "Papyrus","Script","Arial"; }
 
 .font_size {
-  font-size: 22px; }
+  font-size: 15px; }
 
 .font_color_profiles {
   color: white; }
@@ -103,18 +103,6 @@ body {
 
 .display_background {
   background: url(/assets/sky-1232794_1280.png);
-  background-size: 100%; }
-
-.about_display_background {
-  background: url(/assets/sky-1232794_1280.png) no-repeat;
-  background-size: 100%; }
-
-.experience_display_background {
-  background: url(/assets/black-1072366_640.jpg) no-repeat;
-  background-size: 100%; }
-
-.coming_soon_background {
-  background: url(/assets/coffee-839233_640.jpg) no-repeat;
   background-size: 100%; }
 
 .col-centered {

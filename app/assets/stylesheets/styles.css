@@ -102,7 +102,7 @@ body {
   width: 175px; }
 
 .display_background {
-  background: url(/assets/sky-1232794_1280.png) no-repeat;
+  background: url(/assets/sky-1232794_1280.png);
   background-size: 100%; }
 
 .about_display_background {

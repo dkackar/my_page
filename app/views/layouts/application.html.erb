@@ -24,8 +24,8 @@
  </head>
   
 <!-- One container wraps every'thing else -->
-<body class = "container-fluid" id="home_page">
-  
+<body class="container-fluid display_background img-responsive" id="home_page">
+
   <nav class="row navbar navbar-fixed-top">
     <div class="col-md-1"></div>
     <div class="col-md-10">
@@ -51,9 +51,11 @@
   </nav><!--navbar-->
 
   <div class="row" id="other_display_page">
-    <div class="col-md-10 col-lg-10 col-md-offset-1 col-lg-offset-1">
-    <%= yield %>
+    
+    <div class="col-xs-10 col-md-10 col-lg-10 col-xs-offset-1 col-md-offset-1 col-lg-offset-1">
+      <%= yield %>
     </div>
+
     <div class="col-md-1 profile_links_sidebar">
         
       <nav class="navbar">

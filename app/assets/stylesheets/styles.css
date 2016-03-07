@@ -40,6 +40,7 @@ body {
 
 #other_display_page {
   display: block; 
+  height: 100%;
 }
 
 .font_style {

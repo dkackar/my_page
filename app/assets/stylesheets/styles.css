@@ -2,7 +2,7 @@ body {
   padding-top: 70px; }
 
 .container-fluid {
-  background-color: #3377ff;
+  background-color: #e6faff;
 }
 
 .about_container {
@@ -14,19 +14,19 @@ body {
   max-height: 450px; }
 
 .about_me {
-  color: white;
+  color: black;
   font-family: "Arial Narrow","Lucida Console","Arial";
-  font-size: 30px;
+  font-size: 25px;
   color: white;
   width: 100%; }
 
 #myNavbar a {
-  color: white;
+  color: black;
   font-family: "Arial Narrow","Lucida Console","Arial";
   font-size: 25px; }
 
 #profile_links_list a {
-  color: white;
+  color: black;
   font-family: "Arial Narrow","Lucida Console","Arial";
   font-size: 30px; }
 
@@ -47,15 +47,15 @@ body {
   font-family: "Arial Narrow","Lucida Console","Arial"; }
 
 .font_size {
-  font-size: 20px; }
+  font-size: 30px; }
 
 .font_color_profiles {
-  color: white; }
+  color: black; }
 
 .main_profile_links {
   font-size: 75px;
   font-family: "Arial Narrow","Lucida Console","Arial";
-  color: white;
+  color: black;
   width: 100%; }
 
 #profile {
@@ -95,7 +95,7 @@ body {
   height: 100%; }
 
 .info_display {
-  min-height: 900px; }
+  min-height: 1000px; }
 
 .img_profile_picture {
   height: 200px;
@@ -103,11 +103,66 @@ body {
 
 .display_background {
   /*background: url(/assets/BeFunky_Design.jpg);*/
-  background-color: #660022;
+  background-color: #AAB1B7;
   background-size: 100%; }
 
 .col-centered {
   float: none;
   margin: 0 auto; }
 
+/* Basic background image styling. */
+.background-image {
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* Styles for the alternating / transition effect. */
+.toggle-image {
+  position: absolute;
+  width: 100%;
+  top: 0;
+  left: 0;
+  height: 1200px;
+  transition: opacity 1s ease-in-out;
+}
+
+/* Styles for the specific images. */
+.first-image {
+  background-image: url('/assets/snow-850193_1920.jpg');  
+  z-index: -3;
+  opacity: 0;
+}
+
+.second-image {
+  background-image: url('/assets/winter-872174_1920.jpg');
+  z-index: -2;
+  opacity: 0;
+}
+
+.third-image {
+  background-image: url('/assets/hoar-frost-1386798_1920.jpg');
+  z-index: -1;
+  opacity: 0;
+}
+
+.first-image.show {
+  opacity: 1;
+}
+
+.second-image.show {
+  opacity: 1;
+}
+
+.third-image.show {
+  opacity: 1;
+}
+
+.no-bullets-list{
+   list-style-type:none;
+} 
+
+a {
+    color: black;
+}
 /*# sourceMappingURL=styles.css.map */

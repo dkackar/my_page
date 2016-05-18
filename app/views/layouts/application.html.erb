@@ -55,6 +55,9 @@
     </div>
 
     <div class="col-xs-10 col-sm-10 col-md-10 col-lg-10">
+      <div class="background-image toggle-image first-image show"></div>
+      <div class="background-image toggle-image second-image"></div>
+      <div class="background-image toggle-image third-image"></div>
       <%= yield %>
     </div>
 
@@ -66,27 +69,22 @@
           <ul class="nav navbar-nav" id="profile_links_list">
             <li>
                 <a href="https://www.linkedin.com/in/deepakackar">
-                  <i class="fa fa-linkedin fa-lg fa-inverse"></i>
+                  <i class="fa fa-linkedin fa-lg"></i>
                 </a>
             </li>
             <li>
                 <a href="https://github.com/dkackar">
-                  <i class="fa fa-github fa-lg fa-inverse"></i>
-                </a>
-            </li>
-            <li>
-                <a href="https://facebook.com/deepa.soodkackar">
-                  <i class="fa fa-facebook fa-lg fa-inverse"></i>
+                  <i class="fa fa-github fa-lg"></i>
                 </a>
             </li>
             <li>
                 <a href="https://twitter.com/dkackar">
-                  <i class="fa fa-twitter fa-lg fa-inverse"></i>
+                  <i class="fa fa-twitter fa-lg"></i>
                 </a>
             </li>
             <li>
                 <a href="http://deepakackar.wordpress.com">
-                  <i class="fa fa-wordpress fa-lg fa-inverse"></i>
+                  <i class="fa fa-wordpress fa-lg"></i>
                 </a>
             </li>            
           </ul><!-- /.profile_links_list -->
@@ -99,27 +97,26 @@
 </body>
 
 <script stype="text/javascript">
-  $(function() {
-    var body = $('body');
-    var backgrounds = ['#80002a','#990033','#862d59','#993366','#800000','#990000']
-    var current = 0;
 
-    function nextBackground() {
-    body.css(
-     'background-color',
-      backgrounds[current = ++current % backgrounds.length]
-    );
 
-    setTimeout(nextBackground, 3000);
-    }
-    setTimeout(nextBackground, 3000);
-    body.css('background', backgrounds[0]);
+function cycleBackgrounds() {
+  var index = 0;
 
-    $('.scroll').animate({ 
-     right: $(document).width() 
-    }, 3000); // 3000 is duration in milliseconds (ie 3 seconds)
-  });
+  $imageEls = $('.toggle-image'); 
 
+  setInterval(function() {
+    index = index + 1 < $imageEls.length ? index + 1 : 0;
+    $imageEls.eq(index).addClass('show');
+
+    $imageEls.eq(index - 1).removeClass('show');
+
+  }, 4000);
+};
+
+// Document Ready.
+$(function() {
+  cycleBackgrounds();
+});
 </script>
 
 </html>

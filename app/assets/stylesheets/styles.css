@@ -47,13 +47,13 @@ body {
   font-family: "Arial Narrow","Lucida Console","Arial"; }
 
 .font_size {
-  font-size: 30px; }
+  font-size: 25px; }
 
 .font_color_profiles {
   color: black; }
 
 .main_profile_links {
-  font-size: 75px;
+  font-size: 50px;
   font-family: "Arial Narrow","Lucida Console","Arial";
   color: black;
   width: 100%; }
